@@ -1,5 +1,6 @@
 {
   "name": "ravuthz/arcgis-rest",
+  "description": "A Laravel package for Arcgis REST API",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -25,7 +26,9 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "illuminate/support": "*"
+    "php": "^7.4|^8.0",
+    "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
+    "illuminate/console": "^7.0|^8.0|^9.0|^10.0|^11.0"
   },
   "scripts": {
     "post-autoload-dump": [
