@@ -24,7 +24,7 @@ class ArcgisRestService
 
     public function __construct($layerId, $model = null, $url = null, $portal = null)
     {
-        $this->http = new Client(["verify" => false]);
+        $this->http = new Client(["verify" => false, 'timeout' => 7200]);
 
         $url = $url ?? env('ARCGIS_URL');
         $portal = $portal ?? env('ARCGIS_PORTAL');
